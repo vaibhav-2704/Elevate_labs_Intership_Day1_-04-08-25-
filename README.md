@@ -53,7 +53,7 @@ Below are the formulas i have applied to clean and transform the dataset using E
 | 'Age_Cleaned'             | Cleaned age value to ensure it's an integer                  | '=INT(H2)'                                          |
 | 'Age_Groups'              | Categorized patients into age groups                         | '=IF(I2<13, "Child", IF(I2<60, "Adult", "Senior"))' |
 | 'Neighbourhood_Cleaned'   | Standardized neighborhood names to proper case               | '=PROPER(L2)'                                       |
-| 'No_Show_Cleaned'         | Converted `No_show` to binary (1=No, 0=Yes)                  | '=IF(T2="Yes", 1, 0)'                               |
+| 'No_Show_Cleaned'         | Converted `No_show` to binary (0=No, 1=Yes)                  | '=IF(T2="Yes", 1, 0)'                               |
 
 
 **📁 Final Files**
