@@ -56,7 +56,6 @@ To clean and prepare the raw “Medical Appointment No-Show” dataset by:
 
 \- Microsoft Excel
 
-<img width="1862" height="340" alt="image" src="https://github.com/user-attachments/assets/95e00cec-c2a0-48dc-8b16-a91d605b8368" />
 
 
 **## Author**
@@ -64,4 +63,5 @@ To clean and prepare the raw “Medical Appointment No-Show” dataset by:
 SALOORA VAIBHAV
 
 
-
+**## Preview**
+<img width="1862" height="340" alt="image" src="https://github.com/user-attachments/assets/1791b86e-ea4f-44a1-87c4-dc430e101f64" />
