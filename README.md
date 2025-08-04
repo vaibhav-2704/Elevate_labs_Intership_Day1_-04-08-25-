@@ -47,11 +47,11 @@ Below are the formulas i have applied to clean and transform the dataset using E
 
 | Column Name               | Description                                                  | Formula                                             |
 |---------------------------|--------------------------------------------------------------|-----------------------------------------------------|
-| 'ScheduleDay_Cleaned'     | Converted 'ScheduledDay' from datetime to 'dd-mm-yyyy'       | '=TEXT(D2, "dd-mm-yyyy")'                           |
-| 'AppointmentDay_Cleaned'  | Converted 'AppointmentDay` to 'dd-mm-yyyy' format            | '=TEXT(E2, "dd-mm-yyyy")'                           |
-| 'Wait_Days'               | Calculated number of days between scheduled and appointment  | '=G2 - F2' or '=MAX(0, G2 - F2)'                    |
+| 'ScheduleDay_Cleaned'     | Converted 'ScheduledDay' from datetime to 'dd-mm-yyyy'       | '=DATEVALUE(LEFT(D2,10))'                           |
+| 'AppointmentDay_Cleaned'  | Converted 'AppointmentDay` to 'dd-mm-yyyy' format            | '=DATEVALUE(LEFT(E3,10))'                           |
+| 'Wait_Days'               | Calculated number of days between scheduled and appointment  | '=G2 - F2'                                          |
 | 'Age_Cleaned'             | Cleaned age value to ensure it's an integer                  | '=INT(H2)'                                          |
-| 'Age_Groups'              | Categorized patients into age groups                         | '=IF(I2<13, "Child", IF(I2<60, "Adult", "Senior"))' |
+| 'Age_Groups'              | Categorized patients into age groups                         | '=IF(J2<18,"Child",IF(J2<=60,"Adult","Senior"))'    |
 | 'Neighbourhood_Cleaned'   | Standardized neighborhood names to proper case               | '=PROPER(L2)'                                       |
 | 'No_Show_Cleaned'         | Converted `No_show` to binary (0=No, 1=Yes)                  | '=IF(T2="Yes", 1, 0)'                               |
 
