@@ -1,7 +1,7 @@
 #### **# Medical Appointment No-Show Dataset – Cleaning Project 🩺📊**
 
 
-**## Objective**
+**🎯 Objective**
 
 To clean and prepare the raw “Medical Appointment No-Show” dataset by:
 
@@ -19,7 +19,7 @@ To clean and prepare the raw “Medical Appointment No-Show” dataset by:
 
 
 
-**## Dataset Info**
+**🗂️ Dataset Info**
 
 \- Source: \[Kaggle Dataset](https://www.kaggle.com/datasets/joniarroba/noshowappointments)
 
@@ -29,7 +29,7 @@ To clean and prepare the raw “Medical Appointment No-Show” dataset by:
 
 
 
-**## Key Cleaning Steps**
+**🧹 Key Cleaning Steps**
 
 \- Cleaned corrupted neighbourhood encodings (e.g., "Ã‰" → "É")
 
@@ -56,23 +56,23 @@ Below are the formulas i have applied to clean and transform the dataset using E
 | 'No_Show_Cleaned'         | Converted `No_show` to binary (1=No, 0=Yes)                  | '=IF(T2="Yes", 1, 0)'                               |
 
 
-**## Final Files**
+**📁 Final Files**
 
 \- **"KaggleV2-May-2016.xlsx"** – Raw dataset
 
 \- **"medical-no-show-cleaning.xlsx"** – cleaned dataset
 
 
-**## Tools Used**
+**🛠️ Tools Used**
 
 \- Microsoft Excel
 
 
-**## Preview**
+**👀 Preview**
 
 <img width="1862" height="340" alt="image" src="https://github.com/user-attachments/assets/1791b86e-ea4f-44a1-87c4-dc430e101f64" />
 
 
-**## Author**
+**✍️ Author**
 
-SALOORA VAIBHAV
+**SALOORA VAIBHAV**
